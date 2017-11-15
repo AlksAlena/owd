@@ -58,7 +58,7 @@ gulp.task('watch', ['browser-sync', 'css-min'], function() {
   gulp.watch('src/js/**/*.js', browserSync.reload);
 });
 
-gulp.task('build', ['cleanpublic', 'img', 'css-min','css'], function() {
+gulp.task('build', ['cleanpublic', 'img', 'css-min'], function() {
   var buildCss = gulp.src([
     'src/css/media.min.css',
     'src/css/main.min.css'
