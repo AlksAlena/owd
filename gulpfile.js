@@ -72,6 +72,9 @@ gulp.task('build', ['cleanpublic', 'img', 'css-min','css'], function() {
   var buildJs = gulp.src('src/js/**/*')
     .pipe(gulp.dest('public/js'));
 
+  var buildJsLibs = gulp.src('src/libs/**/*')
+    .pipe(gulp.dest('public/libs'));
+
   var buildHtml = gulp.src('src/*.html')
     .pipe(gulp.dest('public'));
 });
