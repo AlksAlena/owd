@@ -13,8 +13,7 @@ body {
   color: #2f1946;
   font-family: 'Dosis', sans-serif;
 }
-header {
-  
+header {  
   padding-bottom: 299px;
   background-image: url('../img/header_bg.jpg');
   background-repeat: no-repeat;
@@ -26,7 +25,7 @@ header {
   height: 100%;
   min-width: 320px;
   max-width: 1270px;
-    margin: auto;
+  margin: auto;
 }
 .header_top {
   padding: 24px 10px 0;
@@ -102,7 +101,6 @@ header {
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
 }
-
 .scroll_menu {
   position: fixed;
   top: -webkit-calc(25%);
@@ -363,6 +361,11 @@ form input:-ms-input-placeholder {
   font-size: 16px;
   font-family: "Dosis", sans-serif;
 }
+form input::-ms-input-placeholder {
+  color: #642f6b;
+  font-size: 16px;
+  font-family: "Dosis", sans-serif;
+}
 form input::placeholder {
   color: #642f6b;
   font-size: 16px;
@@ -472,6 +475,9 @@ input::-moz-placeholder {
   color: #cacaca;
 }
 input:-ms-input-placeholder {
+  color: #cacaca;
+}
+input::-ms-input-placeholder {
   color: #cacaca;
 }
 input::placeholder {
@@ -626,8 +632,6 @@ input::placeholder {
   line-height: 24px;
   font-family: "Lato", sans-serif;
 }
-
-
 .clearfix::after {
   content: '';
   display: table;
